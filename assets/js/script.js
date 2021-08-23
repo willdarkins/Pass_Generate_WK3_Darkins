@@ -19,30 +19,29 @@ var userPrompt = function() {
     return userPrompt();
   }
 
-  var hasNumbers = confirm("Should your password include numbers?");
+  var hasSpecial = confirm("Should your password include special characters?");
 
-  if (hasNumbers === false) {
-    passCharacters.splice(3, 1);
+  if (hasSpecial === false) {
+    passCharacters.splice(0, 22);
   }
 
   var hasUpper = confirm("Should your password include uppercase letters?");
 
   if (hasUpper === false) {
-    passCharacters.splice(1, 1);
+    passCharacters.splice(23, 26);
   }
 
   var hasLower = confirm("Should your password include lowercase letters?");
 
   if (hasLower === false) {
-    passCharacters.splice(2, 1);
+    passCharacters.splice(49, 26);
   }
 
-  var hasSpecial = confirm("Should your password include special characters?");
+  var hasNumbers = confirm("Should your password include numbers?");
 
-  if (hasSpecial === false) {
-    passCharacters.splice(0, 1);
+  if (hasNumbers === false) {
+    passCharacters.splice(75, 10);
   }
-
 
   if (
     hasNumbers === false && 
