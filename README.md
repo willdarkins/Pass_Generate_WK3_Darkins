@@ -1,3 +1,7 @@
+
+
+https://user-images.githubusercontent.com/84754257/131205614-89c5a1d3-c043-408a-9f5b-997803ac8623.mp4
+
 # Password Generator Starter Code
 # Pass_Generate_WK3_Darkins
 ***
@@ -44,4 +48,11 @@ Please make sure to update tests as appropriate.
 ## Mockup
 ***
 Below is a short video diplaying the application's functionality:
+
+
+
+
+https://user-images.githubusercontent.com/84754257/131205625-6e607540-090a-488e-a9ea-471b49aca23e.mp4
+
+
 
