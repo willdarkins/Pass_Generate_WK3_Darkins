@@ -44,3 +44,9 @@ Please make sure to update tests as appropriate.
 ## Mockup
 ***
 Below is a short video diplaying the application's functionality:
+
+
+
+https://user-images.githubusercontent.com/84754257/131205735-cc60890d-99ec-4224-a39c-b4013eff19ce.mp4
+
+
