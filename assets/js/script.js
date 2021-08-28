@@ -9,20 +9,25 @@ var generateBtn = document.querySelector("#generate");
 generateBtn.addEventListener("click", writePassword);
 
 function writePassword() {
-  var password = userPrompt();
+  var password = characterPrompt();
   var passwordText = document.querySelector("#password");
   passwordText.value = password;
 
 }
 
 // Assignment code here
-var userPrompt = function() {
+var characterPrompt = function () {
   charLength = prompt("Enter the number of characters for your new password. Length must be 8-128 characters.");
   
   if (charLength < 8 || charLength > 128 || isNaN(charLength)) {
     alert ("Password length must be 8-128 characters. Re-enter password that's 8-128 characters long.");
-    return userPrompt();
+    return characterPrompt();
   } 
+  return userPrompt();
+}
+
+
+var userPrompt = function() {
 
   var hasSpecial = confirm("Should your password include special characters?");
 
@@ -69,6 +74,7 @@ var userPrompt = function() {
 }
 
 var getRandomItems = function(characterArray) {
+  console.log(characterArray);
   guranteeCharacters = characterArray[Math.floor(Math.random() * characterArray.length)];
   return guranteeCharacters;
 }
